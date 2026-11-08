@@ -1,0 +1,25 @@
+// ------------------------------
+//  Sonatina Symphonic Orchestra
+// ------------------------------
+//      1st Violins Sustain
+// ------------------------------
+
+<control>
+label_cc21=Vibrato
+set_cc21=0
+
+<group>
+ampeg_attack=0.180
+ampeg_vel2attack=-0.180
+ampeg_release=0.9
+fil_type=lpf_1p
+cutoff=1100
+fil_veltrack=4800
+fil_keycenter=a3
+fil_keytrack=100
+
+#define $VIB_PITCH 20
+#define $VIB_VOLUME 0
+#define $VIB_DELAY 0
+#include "includes/vibrato.sfz"
+#include "includes/1st-violins-sustain.sfz"

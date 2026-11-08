@@ -1,0 +1,15 @@
+// ------------------------------
+//  Sonatina Symphonic Orchestra
+// ------------------------------
+//          Trumpet
+// ------------------------------
+
+
+<group>
+loop_mode=loop_continuous
+ampeg_release=0.500
+fil_veltrack=11000
+fil_type=lpf_2p
+cutoff=120
+
+#include "includes/trumpet-solo-looped.sfz"

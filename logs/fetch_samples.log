@@ -1,0 +1,11 @@
+﻿待下载 702 个采样
+  25/702 ok=0 skip=25 fail=0 0s (1644.28 files/s)
+  50/702 ok=11 skip=39 fail=0 8s (6.08 files/s)
+  75/702 ok=34 skip=39 fail=2 54s (1.39 files/s)
+  100/702 ok=36 skip=39 fail=25 112s (0.89 files/s)
+  125/702 ok=36 skip=39 fail=50 176s (0.71 files/s)
+  150/702 ok=36 skip=39 fail=75 245s (0.61 files/s)
+  175/702 ok=36 skip=39 fail=100 303s (0.58 files/s)
+  200/702 ok=36 skip=39 fail=125 371s (0.54 files/s)
+  225/702 ok=36 skip=39 fail=150 430s (0.52 files/s)
+  250/702 ok=36 skip=39 fail=175 493s (0.51 files/s)

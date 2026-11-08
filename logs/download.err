@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "D:\MasterXu2026091\task_2026年11月8日15点03分\epic_rebuild\tools_download_sso.py", line 43, in <module>
+    unzip()
+    ~~~~~^^
+  File "D:\MasterXu2026091\task_2026年11月8日15点03分\epic_rebuild\tools_download_sso.py", line 31, in unzip
+    with zipfile.ZipFile(ZIP_PATH) as z:
+         ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Master Xu\AppData\Local\Programs\Python\Python314\Lib\zipfile\__init__.py", line 1471, in __init__
+    self._RealGetContents()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Master Xu\AppData\Local\Programs\Python\Python314\Lib\zipfile\__init__.py", line 1538, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file

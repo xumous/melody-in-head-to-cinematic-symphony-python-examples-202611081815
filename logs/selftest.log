@@ -1,0 +1,19 @@
+﻿  [music] 8 段编排 ...
+    Intro     1.4s
+    A1        2.3s
+    B         2.6s
+    A2        2.8s
+    C1        2.7s
+    C2        4.2s
+    Outro1    2.2s
+    Outro2    1.9s
+  [sampler] 命中 0 / 新建 3418
+  [mix] 未母带峰值 0.177
+  ✅ premaster.wav
+  ✅ stems/ 6 条分轨
+  ✅ epic_final.wav (240.00s)
+  ✅ epic_final.mid (2624 note events)
+  ✅ spectrogram_final.png
+  ✅ loudness_report.txt
+  [done] selftest 总耗时 47s
+OK {'glue_gr_db': 2.5, 'thd_pct': 4.362739550907541, 'iterations': 1, 'lufs': np.float64(-15.325838253577434), 'true_peak': -0.9999997735090855, 'sample_peak': -1.0380102706921872} {'50-100Hz': -39.075685998743054, '60-120Hz': -38.927239180696446, '300-500Hz': -51.91138233339957, '2-5kHz': -84.54580194781543, '10k-16kHz': -86.23054889471535} 47s

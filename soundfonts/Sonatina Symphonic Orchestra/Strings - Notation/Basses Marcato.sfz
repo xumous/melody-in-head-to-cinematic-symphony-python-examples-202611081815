@@ -1,0 +1,67 @@
+// ------------------------------
+//  Sonatina Symphonic Orchestra
+// ------------------------------
+//        Basses Marcato
+// ------------------------------
+
+
+<control>
+label_cc1=Marcato Attack
+set_cc1=0
+label_cc21=Vibrato
+set_cc21=0
+
+
+// -------
+// Sustain
+// -------
+
+<group>
+ampeg_attack=0.300
+ampeg_vel2attack=-0.300
+ampeg_release=1.25
+fil_type=lpf_1p
+cutoff=1500
+fil_veltrack=4800
+fil_keycenter=a3
+fil_keytrack=100
+
+#define $VIB_PITCH 20
+#define $VIB_VOLUME 0
+#define $VIB_DELAY 0
+#include "includes/vibrato.sfz"
+#include "includes/basses-sustain.sfz"
+
+
+// --------
+// Staccato
+// --------
+
+<group>
+seq_length=2
+seq_position=1
+loop_mode=one_shot
+ampeg_sustain=0
+ampeg_decay=1.5
+ampeg_vel2decay=10
+fil_veltrack=11000
+fil_type=lpf_2p
+cutoff=1000
+gain_cc1=-12
+
+#include "includes/basses-staccato-rr1.sfz"
+
+<group>
+seq_length=2
+seq_position=2
+loop_mode=one_shot
+transpose=-1
+ampeg_sustain=0
+ampeg_decay=1.5
+ampeg_vel2decay=10
+fil_veltrack=11000
+fil_type=lpf_2p
+cutoff=1000
+gain_cc1=-12
+
+#include "includes/basses-staccato-rr2.sfz"

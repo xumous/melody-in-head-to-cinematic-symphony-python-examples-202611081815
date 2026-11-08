@@ -1,0 +1,26 @@
+// ------------------------------
+//  Sonatina Symphonic Orchestra
+// ------------------------------
+//     Trombones Staccato
+// ------------------------------
+
+<group>
+loop_mode=one_shot
+seq_position=1
+seq_length=2
+fil_veltrack=11000
+fil_type=lpf_2p
+cutoff=120
+
+#include "includes/trombones-staccato-rr1.sfz"
+
+<group>
+loop_mode=one_shot
+transpose=-1
+seq_position=2
+seq_length=2
+fil_veltrack=11000
+fil_type=lpf_2p
+cutoff=120
+
+#include "includes/trombones-staccato-rr2.sfz"

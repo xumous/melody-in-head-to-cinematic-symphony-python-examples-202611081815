@@ -1,0 +1,33 @@
+// ------------------------------
+//  Sonatina Symphonic Orchestra
+// ------------------------------
+//        Celli Staccato
+// ------------------------------
+
+
+<group>
+seq_length=2
+seq_position=1
+loop_mode=one_shot
+ampeg_hold=0.3
+ampeg_sustain=0
+ampeg_decay=1.3
+fil_veltrack=11000
+fil_type=lpf_2p
+cutoff=1000
+
+#include "includes/celli-staccato-rr1.sfz"
+
+<group>
+seq_length=2
+seq_position=2
+loop_mode=one_shot
+transpose=-1
+ampeg_hold=0.3
+ampeg_sustain=0
+ampeg_decay=1.3
+fil_veltrack=11000
+fil_type=lpf_2p
+cutoff=1000
+
+#include "includes/celli-staccato-rr2.sfz"

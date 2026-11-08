@@ -1,0 +1,34 @@
+// ------------------------------
+//  Sonatina Symphonic Orchestra
+// ------------------------------
+//         Flute Marcato
+// ------------------------------
+
+<control>
+label_cc1=Marcato Attack
+set_cc1=0
+
+// -------
+// Sustain
+// -------
+
+<group>
+loop_mode=loop_continuous
+ampeg_release=0.425
+fil_keytrack=80
+fil_keycenter=c4
+fil_type=lpf_1p
+cutoff=500
+fil_veltrack=4800
+
+#include "includes/flute-solo-1-looped.sfz"
+
+// --------
+// Staccato
+// --------
+
+#define $RELEASE_AMPLITUDE 0
+#define $GROUP_VOLUME 2
+#define $GAIN_CC1 -12
+
+#include "includes/flute-solo-1-staccato.sfz"

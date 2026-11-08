@@ -1,0 +1,23 @@
+// ------------------------------
+//  Sonatina Symphonic Orchestra
+// ------------------------------
+//         Tuba Sustain
+// ------------------------------
+//
+// Based on SSO 1.0 by Mattias Westlund
+//         mattiaswestlund.net
+// Looped by Signal Experiments
+//         sig-ex.com
+
+
+<group>
+loop_mode=loop_continuous
+ampeg_release=0.645
+ampeg_hold=2
+ampeg_decay=20
+ampeg_sustain=35
+fil_veltrack=11000
+fil_type=lpf_2p
+cutoff=120
+
+#include "includes/tuba-sustain-looped.sfz"

@@ -1,0 +1,19 @@
+// ------------------------------
+//  Sonatina Symphonic Orchestra
+// ------------------------------
+//      Trombones Sustain
+// ------------------------------
+
+
+<group>
+loop_mode=loop_continuous
+ampeg_release=0.650
+ampeg_hold=1.1
+ampeg_decay=28
+ampeg_sustain=35
+fil_veltrack=11000
+fil_type=lpf_2p
+cutoff=120
+pan=20
+
+#include "includes/trombones-sustain-looped.sfz"

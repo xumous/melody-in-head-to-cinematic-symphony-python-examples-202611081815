@@ -1,0 +1,53 @@
+// ------------------------------
+//  Sonatina Symphonic Orchestra
+// ------------------------------
+//         Tuba Marcato
+// ------------------------------
+
+<control>
+label_cc1=Marcato Attack
+set_cc1=0
+
+
+// -------
+// Sustain
+// -------
+
+<group>
+loop_mode=loop_continuous
+ampeg_release=0.645
+ampeg_hold=2
+ampeg_decay=20
+ampeg_sustain=35
+fil_veltrack=11000
+fil_type=lpf_2p
+cutoff=120
+
+#include "includes/tuba-sustain-looped.sfz"
+
+// --------
+// Staccato
+// --------
+
+<group>
+loop_mode=one_shot
+seq_position=1
+seq_length=2
+fil_veltrack=11000
+fil_type=lpf_2p
+cutoff=120
+gain_cc1=-12
+
+#include "includes/tuba-staccato-rr1.sfz"
+
+<group>
+loop_mode=one_shot
+seq_position=2
+seq_length=2
+transpose=-1
+fil_veltrack=11000
+fil_type=lpf_2p
+cutoff=120
+gain_cc1=-12
+
+#include "includes/tuba-staccato-rr2.sfz"

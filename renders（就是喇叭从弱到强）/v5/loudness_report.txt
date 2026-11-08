@@ -1,0 +1,56 @@
+================ 史诗交响配乐渲染报告 ================
+版本: v5
+采样率: 48000 Hz   声道: 2   时长: 240.00 s   BPM: 192
+
+--- 测量命令 ---
+  python epic_engine.py  (内容: pyloudnorm.Meter(48000).integrated_loudness)
+  ffmpeg -i epic_final.wav -af loudnorm=print_format=json -f null -   (交叉验证)
+
+--- 响度 / 峰值 ---
+  Integrated loudness : -15.35 LUFS   (目标 -16 ~ -14)
+  True Peak           : -1.02 dBTP  (上限 -1.0)
+  Sample Peak         : -1.07 dBFS
+  胶水压缩 GR        : 2.5 dB (≤3)
+  饱和 THD            : 1.96 %  (目标 1–2)
+  限幅迭代次数        : 1
+
+--- 频谱检查（平均功率，dB）---
+  50-100Hz  :   -48.3 dB
+  60-120Hz  :   -49.1 dB
+  300-500Hz :   -53.0 dB
+  2-5kHz    :   -69.7 dB
+  10k-16kHz :   -96.3 dB
+
+--- 段落 RMS 曲线（dBFS，母带前）---
+  Intro  :   -36.6 dB
+  A1     :   -29.8 dB
+  B      :   -34.3 dB
+  A2     :   -28.3 dB
+  C1     :   -24.6 dB
+  C2     :   -22.3 dB
+  Outro1 :   -30.6 dB
+  Outro2 :   -31.6 dB
+  最响段: C2（应为 C2）
+
+--- 分轨（stems/）---
+  brass.wav                92.16 MB
+  choir_hybrid.wav         92.16 MB
+  low_brass_bass.wav       92.16 MB
+  melody_lead.wav          92.16 MB
+  percussion.wav           92.16 MB
+  strings.wav              92.16 MB
+
+--- 验收 ---
+  时长 240±2s        : PASS (240.00s)
+  LUFS -16..-14      : PASS (-15.35)
+  TruePeak ≤ -1.0    : PASS (-1.02)
+  50–100Hz 有能量    : PASS (-48.3 dB)
+  2–5kHz 有穿透力    : PASS (-69.7 dB)
+  分轨 ≥3 条非空     : PASS
+
+--- ffmpeg loudnorm 交叉验证 ---
+  命令: ffmpeg -i epic_final.wav -af loudnorm=print_format=json -f null -
+  input_i   (integrated) : -15.36 LUFS
+  input_tp  (true peak)  : -1.02 dBTP
+  input_lra (loudness range): 15.00 LU
+  input_thresh           : -26.34

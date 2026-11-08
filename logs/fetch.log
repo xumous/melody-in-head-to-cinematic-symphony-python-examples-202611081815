@@ -1,0 +1,10 @@
+﻿level0: 59 sfz
+  got 58/59 in 50s
+level1: 55 includes
+  got 55/55
+level2: 7 includes
+  got 7/7
+SFZ 120 个，采样 728 个
+  30/728 ok=0 skip=0 fail=30 139s
+  60/728 ok=0 skip=0 fail=60 214s
+  90/728 ok=0 skip=0 fail=90 361s
